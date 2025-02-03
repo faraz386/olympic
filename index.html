@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<style>
+  *{
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+  }
+  body{
+    
+  }
+  nav{
+      
+      background-color:#1b1b1b;
+      display: flex;
+      justify-content: space-between;
+      padding:10px;
+      margin: 5px;
+      font-size: medium;
+     
+    
+  }
+nav .logo{
+  
+  color: #fff;
+  font-weight: 600;
+  justify-content: space-between;
+  padding: 10px;
+ 
+  
+  
+}
+nav .logo img{
+  font-size: 30px;
+  color: #fff;
+ height: 40px;
+ width:60px;
+  justify-content: space-between;
+  align-items: center;
+ 
+  
+ 
+  
+  
+}
+
+
+
+
+  nav ul{
+      display: flex;
+      list-style: none;
+  }
+  nav li{
+      margin: 0px 5px;
+  }
+  nav ul li a{
+      color: #fff;
+      text-decoration: none;
+      font-size:15px;
+      font-weight: 500;
+      letter-spacing: 1px;
+     transition: all 0.3s ease;
+      padding: 8px 10px;
+      border-radius: 5px;
+  }
+nav ul li a:hover,
+nav ul li a.active{
+  background: #fff;
+  color: #1b1b1b;
+}
+nav .menu-btn i{
+   color: #fff;
+   font-size: 15px;
+   cursor: pointer;
+   display: none;
+}
+h1{
+  display: block;
+}
+p{
+  display: block;
+}
+#click{
+  display: none;
+}
+@media(max-width:575px){
+  nav .menu-btn i{
+      display: block;
+
+  }
+  #click:checked ~ .menu-btn i::before{
+      content: "\f00d";
+  }
+  nav ul{
+      position: fixed;
+      top: 80px;
+      left: -100%;
+      background: #111;
+      height: 100vh;
+      width: 100%;
+      display: block;
+      align-items: center;
+      transition: all 0.3 ease;
+  }
+  #click:checked ~ ul{
+      left: 0%;
+      
+  }
+ 
+  nav ul li a{
+       font-size: 20px;
+  }
+  nav ul li a:hover,
+  nav ul li a.active{
+      color: cyan;
+      background: none;
+  }
+}
+</style>
+<body>
+ 
+<body>
+  <nav>
+    <div class="logo"><img src="/logoweb.jpeg" alt=""></div>
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+        <i class="fa-solid fa-bars"></i>
+    </label>
+        
+        <nav>
+            <ul>
+                <li><a href="#">OlympicGames</a></li>
+                <li><a href="#">Athletes</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Records</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+      </div>
+  
+</body>
+</html>
